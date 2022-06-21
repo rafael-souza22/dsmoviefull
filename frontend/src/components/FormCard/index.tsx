@@ -24,7 +24,7 @@ function FormCard({ movieId }: Props) {
   }, [movieId]);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    
+
     event.preventDefault();
 
     const email = (event.target as any).email.value;
