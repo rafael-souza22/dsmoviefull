@@ -28,8 +28,8 @@ function Listing() {
             });
     }, [pageNumber]);
 
-    const handlePageChange = (newPageNumber: number) => {
-        setPageNumber(newPageNumber);
+    const handlePageChange = (newNumber: number) => {
+        setPageNumber(newNumber);
     }
 
 
@@ -46,7 +46,7 @@ function Listing() {
                     ))}
                 </div>
             </div>
-            <Pagination page={page} onChange={handlePageChange} />
+            
         </>
     );
 }
